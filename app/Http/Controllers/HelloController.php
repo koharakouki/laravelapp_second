@@ -27,6 +27,8 @@ function tag($tag, $txt) {
 
 class HelloController extends Controller
 {
+
+	// indexアクション
 	public function index() {
 
     global $head, $style, $body, $end;
@@ -38,6 +40,7 @@ class HelloController extends Controller
       return $html;
 	}
 
+  // otherアクション
 	public function other() {
 
 		global $head, $style, $body, $end;
