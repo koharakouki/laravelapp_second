@@ -29,8 +29,9 @@ class HelloController extends Controller
 {
 
 	// indexアクション
-	public function index() {
-		$data = ['msg'=>'これはコントローラから渡されたメッセージです。'];
+	public function index(Request $request) {
+		$data = ['msg'=>'これはコントローラから渡されたメッセージです。',
+	           'id'=>$request->id];
     return view('hello.index', $data);
 	}
 
