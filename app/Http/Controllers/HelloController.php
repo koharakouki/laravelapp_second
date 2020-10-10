@@ -30,14 +30,8 @@ class HelloController extends Controller
 
 	// indexアクション
 	public function index() {
-
-    global $head, $style, $body, $end;
-
-    $html = $head . tag('title', 'Hello/Index') . $style . $body
-            . tag('h1', 'Index') . tag('p', 'this is Index page')
-            . '<a href="hello/other">go to Other page</a>'
-            . $end;
-      return $html;
+		$data = ['msg'=>'これはコントローラから渡されたメッセージです。'];
+    return view('hello.index', $data);
 	}
 
   // otherアクション
