@@ -27,5 +27,5 @@ Route::get('/', function () {
 // 	return view('hello.index');
 // });
 
-Route::get('hello', [HelloController::class, 'index']);
 Route::post('hello', [HelloController::class, 'index']);
+Route::get('hello', [HelloController::class, 'index']);
