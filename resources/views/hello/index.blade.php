@@ -40,6 +40,9 @@
 @section('content')
   <p>ここが本文のコンテンツです</p>
   <p>必要なだけ記述ができます</p>
+
+  @include('component.message', ['msg_title'=>'OK', 'msg_content'=>'サブビューです。'])
+
 @endsection
 
 @section('footer')
